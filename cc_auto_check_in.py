@@ -42,7 +42,7 @@ class ServerChan:
     """
 
     def __init__(self, key):
-        self._server_url = f"https://sc.ftqq.com/{key}.send"
+        self._server_url = f"https://sctapi.ftqq.com/{key}.send"
 
     def send_msg(self, text: str, desp: str = ""):
         resp = requests.post(self._server_url, data={"text": text, "desp": desp})
